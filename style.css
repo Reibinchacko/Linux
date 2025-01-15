@@ -1,0 +1,155 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #15151fd2;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #232020;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+nav {
+    background-color: #34495e;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+/* Section Styling */
+section {
+    padding: 30px 50px;
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+    font-size: 30px;
+    color: #145b55;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ecf0f1;
+    transition: color 0.3s ease, padding-bottom 0.3s ease;
+}
+
+h2:hover {
+    color: #2980b9;
+    padding-bottom: 15px;
+}
+
+.command {
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.command:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.command i {
+    font-size: 30px;
+    color: #34495e;
+    margin-right: 20px;
+}
+
+.command code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f0f0;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.advanced-options {
+    margin-top: 20px;
+    background-color: #f1c40f;
+    padding: 18px;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+/* Example image styling */
+.example-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 30px;
+        font-size: 28px;
+    }
+    section {
+        padding: 20px;
+    }
+    .command {
+        padding: 15px;
+    }
+    .advanced-options {
+        padding: 15px;
+    }
+    .command i {
+        font-size: 25px;
+    }
+    nav a {
+        padding: 10px;
+        font-size: 16px;
+        display: inline-block;
+        margin: 0 8px;
+    }
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Commands</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>LINUX COMMANDS</header>
+    <nav>
+        <a href="#apropos">Apropos</a>
+        <a href="#info">Info</a>
+        <a href="#alias">Alias</a>
+        <a href="#uname">Uname</a>
+        <a href="#df">Df</a>
+        <a href="#du">Du</a>
+        <a href="#mount">Mount</a>
+        <a href="#ln">Ln</a>
+        <a href="#man">Man</a>
+    </nav>
+
+    <!-- Apropos Section -->
+    <section id="apropos">
+        <h2><i class="fas fa-search"></i> Apropos</h2>
+        <div class="command">
+            <i class="fas fa-search"></i>
+            <div>
+                <p><strong>Purpose:</strong> Searches the manual page descriptions for a keyword.</p>
+                <p><strong>Example:</strong></p>
+                <code>apropos "file management"</code>
+                <p>This searches for any command with "file management" in its description.</p>
+                <img src="apropos.png" alt="Apropos Example" class="example-image">
+            </div>
+        </div>
+        <div class="advanced-options">
+            <strong>Advanced Options:</strong>
+            <ul>
+                <li>-e: Exact match (search for the keyword exactly).</li>
+                <li>-r: Regular expression search.</li>
+            </ul>
+        </div>
+    </section>
+ <!-- Info Section -->
+ <section id="info">
+    <h2><i class="fas fa-info-circle"></i> Info</h2>
+    <div class="command" style="--x: 15px; --y: -10px;">
+        <i class="fas fa-info-circle"></i>
+        <div>
+            <p><strong>Purpose:</strong> Displays detailed documentation for a command.</p>
+            <p><strong>Example:</strong></p>
+            <code>info ls</code>
+            <p>This opens detailed documentation for the ls command.</p>
+            <img src="info.png" alt="Info Example" class="example-image">
+        </div>
+    </div>
+    <div class="advanced-options">
+        <strong>Advanced Options:</strong>
+        <ul>
+            <li>--node <node_name>: Display information on a specific node.</li>
+            <li>-f <file>: Specify a different info file.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Alias Section -->
+<section id="alias">
+    <h2><i class="fas fa-cogs"></i> Alias</h2>
+    <div class="command" style="--x: -15px; --y: 20px;">
+        <i class="fas fa-cogs"></i>
+        <div>
+            <p><strong>Purpose:</strong> Create a shortcut for a command.</p>
+            <p><strong>Example:</strong></p>
+            <code>alias cls='clear'</code>
+            <p>This creates an alias for the clear command.</p>
+            <img src="alias.png" alt="Alias Example" class="example-image">
+        </div>
+    </div>
+    <div class="advanced-options">
+        <strong>Unaliasing:</strong> To remove an alias, use:
+        <code>unalias cls</code>
+    </div>
+</section>
+
+<!-- Uname Section -->
+<section id="uname">
+    <h2><i class="fas fa-desktop"></i> Uname</h2>
+    <div class="command" style="--x: 10px; --y: 10px;">
+        <i class="fas fa-desktop"></i>
+        <div>
+            <p><strong>Purpose:</strong> Displays system information such as kernel name, version, and architecture.</p>
+            <p><strong>Example:</strong></p>
+            <code>uname -a</code>
+            <p>This shows all available system information.</p>
+            <img src="uname.png" alt="Uname Example" class="example-image">
+        </div>
+    </div>
+    <div class="advanced-options">
+        <strong>Advanced Options:</strong>
+        <ul>
+            <li>-s: Kernel name.</li>
+            <li>-r: Kernel release.</li>
+            <li>-v: Kernel version.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Df Section -->
+<section id="df">
+    <h2><i class="fas fa-hdd"></i> Df</h2>
+    <div class="command" style="--x: 10px; --y: 10px;">
+        <i class="fas fa-hdd"></i>
+        <div>
+            <p><strong>Purpose:</strong> Shows disk space usage for file systems.</p>
+            <p><strong>Example:</strong></p>
+            <code>df -h</code>
+            <p>This displays disk space usage in a human-readable format.</p>
+            <img src="df.png" alt="Df Example" class="example-image">
+        </div>
+    </div>
+    <div class="advanced-options">
+        <strong>Advanced Options:</strong>
+        <ul>
+            <li>-T: Show filesystem type.</li>
+            <li>-i: Show inode information instead of block usage.</li>
+            <li>--total: Produce a grand total.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Du Section -->
+<section id="du">
+    <h2><i class="fas fa-folder-open"></i> Du</h2>
+    <div class="command" style="--x: 10px; --y: 10px;">
+        <i class="fas fa-folder-open"></i>
+        <div>
+            <p><strong>Purpose:</strong> Displays disk usage of files and directories.</p>
+            <p><strong>Example:</strong></p>
+            <code>du -sh *</code>
+            <p>This shows the disk usage of files and directories in the current directory in a human-readable format.</p>
+            <img src="du.png" alt="Du Example" class="example-image">
+        </div>
+    </div>
+    <div class="advanced-options">
+        <strong>Advanced Options:</strong>
+        <ul>
+            <li>-a: Display size of all files.</li>
+            <li>-c: Produce a grand total.</li>
+            <li>-d <depth>: Limit the depth of directory traversal.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Mount Section -->
+<section id="mount">
+    <h2><i class="fas fa-plug"></i> Mount</h2>
+    <div class="command" style="--x: 10px; --y: 10px;">
+        <i class="fas fa-plug"></i>
+        <div>
+            <p><strong>Purpose:</strong> Mounts a file system or device.</p>
+            <p><strong>Example:</strong></p>
+            <code>mount /dev/sdb1 /mnt</code>
+            <p>This mounts the device /dev/sdb1 to the /mnt directory.</p>
+            <img src="mount.png" alt="Mount Example" class="example-image">
+        </div>
+    </div>
+    <div class="advanced-options">
+        <strong>Advanced Options:</strong>
+        <ul>
+            <li>-t <type>: Specify the filesystem type.</li>
+            <li>-o <options>: Mount options such as read-only.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Ln Section -->
+<section id="ln">
+    <h2><i class="fas fa-link"></i> Ln</h2>
+    <div class="command" style="--x: 10px; --y: 10px;">
+        <i class="fas fa-link"></i>
+        <div>
+            <p><strong>Purpose:</strong> Creates hard or symbolic links.</p>
+            <p><strong>Example:</strong></p>
+            <code>ln -s /path/to/file /path/to/link</code>
+            <p>This creates a symbolic link from the file to the link.</p>
+            <img src="ln.png" alt="Ln Example" class="example-image">
+        </div>
+    </div>
+    <div class="advanced-options">
+        <strong>Advanced Options:</strong>
+        <ul>
+            <li>-s: Create a symbolic link.</li>
+            <li>-f: Force the creation of the link, overwriting any existing files.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Man Section -->
+<section id="man">
+    <h2><i class="fas fa-book"></i> Man</h2>
+    <div class="command" style="--x: 10px; --y: 10px;">
+        <i class="fas fa-book"></i>
+        <div>
+            <p><strong>Purpose:</strong> Displays the manual for a command.</p>
+            <p><strong>Example:</strong></p>
+            <code>man ls</code>
+            <p>This opens the manual page for the ls command.</p>
+            <img src="man.png" alt="Man Example" class="example-image">
+        </div>
+    </div>
+    <div class="advanced-options">
+        <strong>Advanced Options:</strong>
+        <ul>
+            <li>-k <keyword>: Search for the keyword in the manual.</li>
+            <li>-f <command>: Display the function of the command.</li>
+        </ul>
+    </div>
+</section>
+</body>
+</html>
